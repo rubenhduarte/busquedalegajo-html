@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de Legajo de Empleado</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Consulta de Legajo de Empleado</h1>
+  <div>
+    <label for="dni">DNI:</label>
+    <input type="text" id="dni" placeholder="Ingrese DNI">
+    <button onclick="buscarLegajo()">Consultar</button>
+    <button onclick="limpiar()">Limpiar</button>
+  </div>
+  <div id="resultado" style="display:none;">
+    <h2>Legajo del Empleado</h2>
+    <p><strong>Nombre Completo:</strong> <span id="nombreCompleto"></span></p>
+    <p><strong>Fecha de Nacimiento:</strong> <span id="fechaNacimiento"></span></p>
+    <p><strong>Número de Legajo:</strong> <span id="numeroLegajo"></span></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
